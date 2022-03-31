@@ -4,12 +4,7 @@ function even_or_odd(number) {
   else return "Odd";
 }
 
-function even_or_odd(number) {
-  return number % 2 ? "Odd" : "Even";
-}
-
 // Sum of positive
-
 function positiveSum(arr) {
   let sum = 0;
   for (let i = 0; i < arr.length; i++) {
