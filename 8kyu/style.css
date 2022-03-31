@@ -65,6 +65,12 @@ a:hover {
   text-decoration: underline;
 }
 
+footer {
+  color: #fff;
+  text-align: center;
+  padding-top: 4rem;
+  font-size: 1rem;
+}
 /* desert scheme ported from vim to google prettify */
 pre.prettyprint {
   display: block;
