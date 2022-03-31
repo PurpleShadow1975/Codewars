@@ -20,26 +20,44 @@
         <h3>My solution</h3>
         <pre class="prettyprint">
 
-      function even_or_odd(number) {
-        if (number % 2 === 0) return "Even";
-        else return "Odd";
-      }
+  function even_or_odd(number) {
+    if (number % 2 === 0) return "Even";
+    else return "Odd";
+  }
         </pre>
-        <h3>Most liked solution</h3>
-        <pre class="prettyprint">
 
-      function even_or_odd(number) {
-        return number % 2 ? "Odd" : "Even"
-      }
-            </pre>
-        <p><a href="https://www.codewars.com/kata/53da3dbb4a5168369a0000fe/train/javascript" target="_blank">Link to
+        <p class="codewars"><a href="https://www.codewars.com/kata/53da3dbb4a5168369a0000fe/train/javascript"
+            target="_blank">Link to
             Kata on
             Codewars</a></p>
       </div>
 
+      <div class="kataName">
+        <h2>Sum of positive</h2>
+        <p>You get an array of numbers, return the sum of all of the positives ones.</p><br>
+        <h3>My solution</h3>
+        <pre class="prettyprint">
+
+  function positiveSum(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] >= 0) {
+        sum = sum + arr[i]
+      }
+    } return sum;
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/5715eaedb436cf5606000381/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
 
     </div>
+
     <footer>CREATED & DESIGNED BY ANTJE MYRIKNAS © 2022</footer>
+
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
     <script src="script.js"></script>
   </body>

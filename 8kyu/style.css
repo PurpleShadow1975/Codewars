@@ -46,11 +46,26 @@ p {
   padding: 2rem;
   border: 1px solid #333;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
 pre {
   font-size: 1.5rem;
   margin-bottom: 4rem;
+}
+
+.codewars {
+  padding-bottom: 1rem;
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 15rem;
 }
 
 a {
@@ -65,12 +80,6 @@ a:hover {
   text-decoration: underline;
 }
 
-footer {
-  color: #fff;
-  text-align: center;
-  padding-top: 4rem;
-  font-size: 1rem;
-}
 /* desert scheme ported from vim to google prettify */
 pre.prettyprint {
   display: block;
