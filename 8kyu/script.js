@@ -14,3 +14,11 @@ function positiveSum(arr) {
   }
   return sum;
 }
+
+// Convert a number to a string
+function numberToString(num) {
+  return num.toString();
+}
+
+// Return Negative
+let makeNegative = (num) => (num > 0 ? -num : num);
