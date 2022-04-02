@@ -7,3 +7,4 @@ This repository contains my solutions to Codewars challenges.
 3. Convert number to string
 4. Return negative
 5. Reversed string
+6. Convert boolean to string

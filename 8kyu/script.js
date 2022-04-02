@@ -31,3 +31,8 @@ function solution(str) {
   }
   return reversed;
 }
+
+// Convert boolean to string
+function boolToWord(bool) {
+  return bool ? "Yes" : "No";
+}
