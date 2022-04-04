@@ -45,3 +45,8 @@ function squareSum(numbers) {
   }
   return sum;
 }
+
+// RemoveStringSpaces
+function noSpace(x){
+  return x.replace(/\s+/g,'')
+}
