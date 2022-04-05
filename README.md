@@ -12,3 +12,4 @@ This repository contains my solutions to Codewars challenges.
 6. Convert boolean to string
 7. Square(n)Sum
 8. RemoveStringSpaces
+9. Convert a String to a Number

@@ -47,6 +47,11 @@ function squareSum(numbers) {
 }
 
 // RemoveStringSpaces
-function noSpace(x){
-  return x.replace(/\s+/g,'')
+function noSpace(x) {
+  return x.replace(/\s+/g, "");
 }
+
+// Convert a String to a Number
+let stringToNumber = function (str) {
+  return Number(str);
+};
