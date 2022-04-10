@@ -56,10 +56,7 @@ let stringToNumber = function (str) {
   return Number(str);
 };
 
-// function removeChar(str) {
-//   let array = str.split("");
-//   array.shift();
-//   array.pop();
-//   str = array.join("");
-//   console.log(array);
-// }
+// Remove First and Last Character
+function removeChar(str) {
+  return str.slice(1, -1);
+}
