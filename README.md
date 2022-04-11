@@ -2,7 +2,14 @@
 
 This repository contains my solutions to Codewars challenges.
 
+## 6kyu
+
+1. Multiples of 3 or 5
+
 ## 7kyu
+
+1. Highest and lowest
+2. Greet me
 
 ## 8kyu
 

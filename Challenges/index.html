@@ -13,9 +13,9 @@
     <header>
       <nav>
         <ul>
-          <li><a href="#">8kyu</a></li>
-          <li><a href="#">7kyu</a></li>
-          <li>6kyu</li>
+          <li><a class="white" href="#8kyu">8kyu</a></li>
+          <li><a class="red" href="#7kyu">7kyu</a></li>
+          <li><a class="yellow" href="#6kyu">6kyu</a></li>
           <li>5kyu</li>
           <li>4kyu</li>
           <li>3kyu</li>
@@ -25,40 +25,92 @@
         </ul>
       </nav>
     </header>
-
-    <h1>Codewars - 7kyu</h1>
+    <h2 id="6kyu" class="yellow">Codewars - 6kyu</h2>
     <div class="wrapper">
 
       <div class="kataName">
-        <h2>Even or Odd</h2>
-        <p>Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd
-          numbers.</p>
-        <h3>My solution</h3>
+        <h3>Multiples of 3 or 5</h3>
+        <p>Finish the solution so that it returns the sum of all the multiples of 3 or 5 below the number passed in.</p>
+        <h4>My solution</h4>
         <pre class="prettyprint">
 
-  function even_or_odd(number) {
-    if (number % 2 === 0) return "Even";
-    else return "Odd";
+  function solution(number){
+    let sum = 0;
+            
+    for(let i = 1; i< number; i++) {
+      if(i % 3 == 0 || i % 5 == 0) {
+        sum += i
+      }
+    }
+    return sum;
   }
         </pre>
 
-        <p class="codewars"><a href="https://www.codewars.com/kata/53da3dbb4a5168369a0000fe/train/javascript"
+        <p class="codewars"><a href="https://www.codewars.com/kata/514b92a657cdc65150000006/train/javascript"
             target="_blank">Link to
             Kata on
             Codewars</a></p>
       </div>
-
 
     </div>
 
-    <h1>Codewars - 8kyu</h1>
+    <h2 id="7kyu" class="red">Codewars - 7kyu</h2>
     <div class="wrapper">
 
       <div class="kataName">
-        <h2>Even or Odd</h2>
+        <h3>Highest and Lowest</h3>
+        <p>You are given a string of space separated numbers, and have to return the highest and lowest number.</p>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function highAndLow(numbers){
+    let arr = numbers.split(" ");
+    arr.sort((a, b) => a - b);
+    let high = arr.pop();
+    let low = arr.shift();
+    if (low === undefined) {
+      low = high;
+    }
+    return (high + " " + low);
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/554b4ac871d6813a03000035/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+      <div class="kataName">
+        <h3>Greet Me</h3>
+        <p>Write a method that takes one argument as name and then greets that name, capitalized and ends with an
+          exclamation.</p>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  let greet = function(name) {
+    name = name.toLowerCase();
+    name = name.replace(name[0], name[0].toUpperCase());
+    return `Hello ${name}!`;
+  };
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/535474308bb336c9980006f2/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+    </div>
+
+    <h2 id="8kyu" class="white">Codewars - 8kyu</h2>
+    <div class="wrapper">
+
+      <div class="kataName">
+        <h3>Even or Odd</h3>
         <p>Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd
           numbers.</p>
-        <h3>My solution</h3>
+        <h4>My solution</h4>
         <pre class="prettyprint">
 
   function even_or_odd(number) {
@@ -74,9 +126,9 @@
       </div>
 
       <div class="kataName">
-        <h2>Sum of positive</h2>
+        <h3>Sum of positive</h3>
         <p>You get an array of numbers, return the sum of all of the positives ones.</p><br>
-        <h3>My solution</h3>
+        <h4>My solution</h4>
         <pre class="prettyprint">
 
   function positiveSum(arr) {
@@ -96,9 +148,9 @@
       </div>
 
       <div class="kataName">
-        <h2>Convert number to string</h2>
+        <h3>Convert number to string</h3>
         <p>We need a function that can transform a number into a string.</p><br>
-        <h3>My solution</h3>
+        <h4>My solution</h4>
         <pre class="prettyprint">
 
     function numberToString(num) {
@@ -112,9 +164,9 @@
             Codewars</a></p>
       </div>
       <div class="kataName">
-        <h2>Return Negative</h2>
+        <h3>Return Negative</h3>
         <p>You are given a number and have to make it negative. But maybe the number is already negative?</p><br>
-        <h3>My solution</h3>
+        <h4>My solution</h4>
         <pre class="prettyprint">
 
   let makeNegative = (num) => (num > 0 ? -num : num);
@@ -127,9 +179,9 @@
       </div>
 
       <div class="kataName">
-        <h2>Reversed String</h2>
+        <h3>Reversed String</h3>
         <p>Complete the soluton so that it reverses the string passed to it.</p><br>
-        <h3>My solution</h3>
+        <h4>My solution</h4>
         <pre class="prettyprint">
 
   function solution(str){
@@ -148,9 +200,9 @@
       </div>
 
       <div class="kataName">
-        <h2>Convert boolean value to string</h2>
+        <h3>Convert boolean value to string</h3>
         <p>Complete the method that takes a boolean value and returns "Yes" for true or "No" for false.</p><br>
-        <h3>My solution</h3>
+        <h4>My solution</h4>
         <pre class="prettyprint">
 
   function boolToWord( bool ){
@@ -165,10 +217,10 @@
       </div>
 
       <div class="kataName">
-        <h2>Square(n)Sum</h2>
+        <h3>Square(n)Sum</h3>
         <p>Complete the square sum function so that it squares each number passed into it and then sums the results
           together.</p><br>
-        <h3>My solution</h3>
+        <h4>My solution</h4>
         <pre class="prettyprint">
 
   function squareSum(numbers){
@@ -187,9 +239,9 @@
       </div>
 
       <div class="kataName">
-        <h2>RemoveStringSpaces</h2>
+        <h3>RemoveStringSpaces</h3>
         <p>Remove the spaces from the string, then return the resultant string.</p><br>
-        <h3>My solution</h3>
+        <h4>My solution</h4>
         <pre class="prettyprint">
 
   function noSpace(x){
@@ -204,10 +256,10 @@
       </div>
 
       <div class="kataName">
-        <h2>Convert a String to a Number</h2>
+        <h3>Convert a String to a Number</h3>
         <p>We need a function that can transform a string into a number. What ways of achieving this do you know?</p>
         <br>
-        <h3>My solution</h3>
+        <h4>My solution</h4>
         <pre class="prettyprint">
 
   let stringToNumber = function(str){
@@ -221,10 +273,10 @@
             Codewars</a></p>
       </div>
       <div class="kataName">
-        <h2>Remove first and last character</h2>
+        <h3>Remove first and last character</h3>
         <p>Create a function that removes the first and last characters of a string.</p>
         <br>
-        <h3>My solution</h3>
+        <h4>My solution</h4>
         <pre class="prettyprint">
 
   function removeChar(str) {

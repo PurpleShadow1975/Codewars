@@ -63,14 +63,6 @@ function removeChar(str) {
 
 // 7th Kyu
 
-// Greet Me
-let greet = function (name) {
-  name = name.toLowerCase();
-  name = name.replace(name[0], name[0].toUpperCase());
-
-  return `Hello ${name}!`;
-};
-
 // Highest and Lowest
 function highAndLow(numbers) {
   let arr = numbers.split(" ");
@@ -81,9 +73,13 @@ function highAndLow(numbers) {
   if (low === undefined) {
     low = high;
   }
-  console.log(high + " " + low);
+  return high + " " + low;
 }
 
-highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4");
-highAndLow("1 2 3");
-highAndLow("42");
+// Greet Me
+let greet = function (name) {
+  name = name.toLowerCase();
+  name = name.replace(name[0], name[0].toUpperCase());
+
+  return `Hello ${name}!`;
+};
