@@ -61,6 +61,35 @@ function removeChar(str) {
   return str.slice(1, -1);
 }
 
+// String repeat
+function repeatStr(n, s) {
+  let str = "";
+  for (let i = 0; i < n; i++) {
+    str += s;
+  }
+  return str;
+}
+
+// Grasshopper - Summation
+let summation = function (num) {
+  let total = 0;
+  for (let i = 1; i <= num; i++) {
+    total += i;
+  }
+  return total;
+};
+
+// Counting sheep
+function countSheeps(arrayOfSheep) {
+  let counter = 0;
+  for (let i = 0; i < arrayOfSheep.length; i++) {
+    if (arrayOfSheep[i] === true) {
+      counter += 1;
+    }
+  }
+  return counter;
+}
+
 // 7th Kyu
 
 // Highest and Lowest
@@ -83,3 +112,17 @@ let greet = function (name) {
 
   return `Hello ${name}!`;
 };
+
+// 6kyu
+
+// Multiples of 3 or 5
+function solution(number) {
+  let sum = 0;
+
+  for (let i = 1; i < number; i++) {
+    if (i % 3 == 0 || i % 5 == 0) {
+      sum += i;
+    }
+  }
+  return sum;
+}

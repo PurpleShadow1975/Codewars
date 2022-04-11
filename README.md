@@ -13,13 +13,17 @@ This repository contains my solutions to Codewars challenges.
 
 ## 8kyu
 
-1. Even or odd
-2. Sum of positive
-3. Convert number to string
-4. Return negative
-5. Reversed string
-6. Convert boolean to string
-7. Square(n)Sum
-8. RemoveStringSpaces
-9. Convert a string to a number
-10. Remove first and last character
+1. Counting sheep
+2. Grasshopper - summation
+3. Find smallest integer
+4. String repeat
+5. Even or odd
+6. Sum of positive
+7. Convert number to string
+8. Return negative
+9. Reversed string
+10. Convert boolean value to string
+11. Square(n)Sum
+12. RemoveStringSpaces
+13. Convert a string to a number
+14. Remove first and last character

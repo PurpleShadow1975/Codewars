@@ -107,6 +107,95 @@
     <div class="wrapper">
 
       <div class="kataName">
+        <h3>Counting sheep</h3>
+        <p>We need a function that counts the number of sheep present in the array (true).</p>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function countSheeps(arrayOfSheep) {
+    let counter = 0;
+    for (let i = 0; i < arrayOfSheep.length; i++) {
+      if (arrayOfSheep[i] === true) {
+        counter += 1;
+      }
+    }
+    return counter;
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/54edbc7200b811e956000556/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+
+
+      <div class="kataName">
+        <h3>Grasshopper - Summation</h3>
+        <p>Write a program that finds the summation of every number from 1 to num.</p>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  let summation = function (num) {
+    let total = 0;
+    for (let i = 1; i <= num; i++) {
+      total += i;
+    }
+    return total;
+  }; 
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/55d24f55d7dd296eb9000030/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+
+
+
+      <div class="kataName">
+        <h3>Find smallest integer</h3>
+        <p>Given an array of integers your solution should find the smallest.</p>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  class SmallestIntegerFinder {
+    findSmallestInt(args) {
+      return (Math.min(...args))
+    }
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/55a2d7ebe362935a210000b2/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+      <div class="kataName">
+        <h3>String repeat</h3>
+        <p>Write a function which repeats the given string exactly n times.</p>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function repeatStr(n, s) {
+    let str = "";
+    for (let i = 0; i < n; i++) {
+      str += s;
+    }
+    return str;
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/57a0e5c372292dd76d000d7e/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+      <div class="kataName">
         <h3>Even or Odd</h3>
         <p>Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd
           numbers.</p>
