@@ -2,6 +2,8 @@
 
 This repository contains my solutions to Codewars challenges.
 
+## 7kyu
+
 ## 8kyu
 
 1. Even or odd

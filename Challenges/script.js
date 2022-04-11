@@ -60,3 +60,30 @@ let stringToNumber = function (str) {
 function removeChar(str) {
   return str.slice(1, -1);
 }
+
+// 7th Kyu
+
+// Greet Me
+let greet = function (name) {
+  name = name.toLowerCase();
+  name = name.replace(name[0], name[0].toUpperCase());
+
+  return `Hello ${name}!`;
+};
+
+// Highest and Lowest
+function highAndLow(numbers) {
+  let arr = numbers.split(" ");
+  arr.sort((a, b) => a - b);
+  let high = arr.pop();
+  let low = arr.shift();
+
+  if (low === undefined) {
+    low = high;
+  }
+  console.log(high + " " + low);
+}
+
+highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4");
+highAndLow("1 2 3");
+highAndLow("42");

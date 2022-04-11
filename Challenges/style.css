@@ -35,6 +35,30 @@ p {
   padding-bottom: 2rem;
 }
 
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 2rem;
+  font-size: 2rem;
+  color: rgb(131, 131, 131);
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 1rem;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
