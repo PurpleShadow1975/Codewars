@@ -126,3 +126,46 @@ function solution(number) {
   }
   return sum;
 }
+
+// Stay Hydrated
+function litres(time) {
+  return Math.floor(time / 2);
+}
+
+// Century from Year
+function century(year) {
+  return Math.ceil(year / 100);
+}
+
+// Basic Mathematical Operations
+function basicOp(operation, value1, value2) {
+  return eval(value1 + operation + value2);
+}
+
+// Returning strings
+
+// onvert number to reversed array of digits
+function digitize(n) {
+  return String(n).split("").map(Number).reverse();
+}
+
+// Abbreviate a Two Word Name
+function abbrevName(name) {
+  let name1 = name.split(" ");
+  return (
+    name.split(" ")[0][0].toUpperCase() +
+    "." +
+    name.split(" ")[1][0].toUpperCase()
+  );
+  console.log(name1[0][0].toUpperCase + "." + name1[1][0].toUpperCase);
+}
+
+// Is n divisible by x and y?
+function isDivisible(n, x, y) {
+  if (n % x === 0 && n % y === 0) {
+    return true;
+  } else return false;
+}
+
+// Beginner - Lost Without a Map
+function maps(x) {}
