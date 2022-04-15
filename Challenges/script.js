@@ -173,3 +173,4 @@ function maps(x) {
 }
 
 // A Needle in the Haystack
+function maps(x) {}
