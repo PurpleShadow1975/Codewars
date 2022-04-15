@@ -180,3 +180,10 @@ function findNeedle(haystack) {
     }
   }
 }
+
+// Convert a Boolean to a String
+function booleanToString(b) {
+  return b.toString();
+}
+
+booleanToString(true);
