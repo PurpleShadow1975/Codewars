@@ -186,4 +186,43 @@ function booleanToString(b) {
   return b.toString();
 }
 
-booleanToString(true);
+// Invert values
+function invert(array) {
+  let newArray = [];
+  for (let i = 0; i <= array.length - 1; i++) {
+    if (array[i] < 0) {
+      newArray[i] = Math.abs(array[i]);
+    } else {
+      newArray[i] = -Math.abs(array[i]);
+    }
+  }
+  return newArray;
+}
+
+//16/04/2022
+//Beginner Series #2 Clock
+function past(h, m, s) {
+  return h * 3600000 + m * 60000 + s * 1000;
+}
+
+// Sentence Smash
+function smash(words) {
+  return words.join(" ");
+}
+
+// Complementary DNA
+function DNAStrand(dna) {
+  let newDNA = "";
+  for (let i = 0; i < dna.length; i++) {
+    if (dna[i] === "A") {
+      newDNA = newDNA + "T";
+    } else if (dna[i] === "T") {
+      newDNA = newDNA + "A";
+    } else if (dna[i] === "C") {
+      newDNA = newDNA + "G";
+    } else if (dna[i] === "G") {
+      newDNA = newDNA + "C";
+    }
+  }
+  return newDNA;
+}
