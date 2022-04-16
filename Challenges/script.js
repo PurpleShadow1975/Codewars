@@ -228,7 +228,18 @@ function DNAStrand(dna) {
 }
 
 // Beginner Series #1 School Paperwork
-
 function paperwork(n, m) {
   return n > 0 && m > 0 ? n * m : 0;
+}
+
+// Calculate average
+function find_average(array) {
+  let sum = array.reduce((total, current) => total + current, 0);
+  let result = sum / array.length;
+  return result;
+}
+
+// Reverse words
+function reverseWords(str) {
+  return str.split("").reverse().join("").split(" ").reverse().join(" ");
 }
