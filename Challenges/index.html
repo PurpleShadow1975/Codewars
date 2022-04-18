@@ -101,6 +101,35 @@
             Codewars</a></p>
       </div>
 
+      <div class="kataName">
+        <h3>Complementary DNA</h3>
+        <p>Your function receives one side of the DNA, you need to return the other.</p>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function DNAStrand(dna){
+    let newDNA = "";
+    for (let i = 0; i < dna.length; i++) {
+      if (dna[i] === "A") {
+        newDNA = newDNA + "T";
+      } else if (dna[i] === "T") {
+        newDNA = newDNA + "A";
+      } else if (dna[i] === "C") {
+        newDNA = newDNA + "G";
+      } else if (dna[i] === "G") {
+        newDNA = newDNA + "C";
+        }
+      }
+    return newDNA;
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/554e4a2f232cdd87d9000038/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
     </div>
 
     <h2 id="8kyu" class="white">Codewars - 8kyu</h2>
@@ -151,9 +180,6 @@
             Kata on
             Codewars</a></p>
       </div>
-
-
-
 
       <div class="kataName">
         <h3>Find smallest integer</h3>
@@ -378,6 +404,327 @@
             Kata on
             Codewars</a></p>
       </div>
+
+      <!-- New ones -->
+      <div class="kataName">
+        <h3>Stay hydrated</h3>
+        <p>You get given the time in hours and you need to return the number of litres, rounded to the
+          smallest value.</p>
+        <br>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function litres(time) {
+    return (Math.floor(time / 2));
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/582cb0224e56e068d800003c/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+      <div class="kataName">
+        <h3>Century from year</h3>
+        <p>Given a year, return the century it is in.</p>
+        <br>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function century(year) {
+    return Math.ceil(year / 100);
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+      <div class="kataName">
+        <h3>Basic Mathematical Operations</h3>
+        <p>Your task is to create a function that does four basic mathematical operations.</p>
+        <br>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function basicOp(operation, value1, value2) {
+    return eval(value1 + operation + value2);
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/57356c55867b9b7a60000bd7/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+      <div class="kataName">
+        <h3>Returning Strings</h3>
+        <p>Create a function that will return a greeting statement that uses an input.</p>
+        <br>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function greet(name){
+    return (`Hello, ${name} how are you doing today?`)
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/55a70521798b14d4750000a4/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+      <div class="kataName">
+        <h3>Convert number to reversed array of digits</h3>
+        <p>Given a random non-negative number, you have to return the digits of this number within an array in reverse
+          order.</p>
+        <br>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function digitize(n) {
+    return String(n).split("").map(Number).reverse();
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/5583090cbe83f4fd8c000051/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+      <div class="kataName">
+        <h3>Abbreviate a two word name</h3>
+        <p>Write a function to convert a name into initials.</p>
+        <br>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function abbrevName(name){
+    return (
+    name.split(" ")[0][0].toUpperCase() +
+    "." +
+    name.split(" ")[1][0].toUpperCase()
+    );
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+      <div class="kataName">
+        <h3>Is n divisible by x and y</h3>
+        <p>Create a function that checks if a number n is divisible by two numbers, x and y.</p>
+        <br>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function isDivisible(n, x, y) {
+    if (n % x === 0 && n % y === 0) {
+      return true;
+    } else return false;
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/5545f109004975ea66000086/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+      <div class="kataName">
+        <h3>Beginner - lost without a map</h3>
+        <p>Given an array of integers, return a new array with each value doubled.</p>
+        <br>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function maps(x){
+    return (y = x.map((x) => x * 2));
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/57f781872e3d8ca2a000007e/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+      <div class="kataName">
+        <h3>A needle in the haystack</h3>
+        <p>Write a function that takes an array of data and find one needle.</p>
+        <br>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function findNeedle(haystack) {
+    for (let i = 0; i <= haystack.length; i++) {
+      if (haystack[i] === "needle") {
+        return `found the needle at position ${i}`;
+      }
+    }
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/56676e8fabd2d1ff3000000c/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+      <div class="kataName">
+        <h3>Convert a Boolean to a String</h3>
+        <p>Implement a function which convert the given boolean value into its string representation.</p>
+        <br>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function booleanToString(b){
+    return b.toString();
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/551b4501ac0447318f0009cd/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+      <div class="kataName">
+        <h3>You can't code under pressure #1</h3>
+        <p>Code as fast as you can! You need to double the integer and return it.</p>
+        <br>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function doubleInteger(i) {
+    return i * 2;
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/53ee5429ba190077850011d4/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+      <div class="kataName">
+        <h3>Invert values</h3>
+        <p>Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the
+          negatives become positives.</p>
+        <br>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function invert(array) {
+    let newArray = [];
+    for (let i = 0; i <= array.length - 1; i++) {
+      if (array[i] < 0) {
+        newArray[i] = Math.abs(array[i]);
+      } else {
+          newArray[i] = -Math.abs(array[i]);
+      }
+    }
+    return newArray;
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+      <div class="kataName">
+        <h3>Beginner Series #2 Clock</h3>
+        <p>Write a function which returns the time since midnight in milliseconds.</p>
+        <br>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function past(h, m, s){
+    return h * 3600000 + m * 60000 + s * 1000;
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+      <div class="kataName">
+        <h3>Sentence Smash</h3>
+        <p>Write a function that takes an array of words and return them as a sentence.</p>
+        <br>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function smash (words) {
+    return words.join(" ");
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/53dc23c68a0c93699800041d/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+      <div class="kataName">
+        <h3>Beginner Series #1 School paperwork</h3>
+        <p>Your task is to calculate how many blank pages do you need.</p>
+        <br>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function paperwork(n, m) {
+    if (n <= 0 || m <= 0) {
+      return 0
+    } else {
+      return n * m
+    }
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/55f9b48403f6b87a7c0000bd/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+      <div class="kataName">
+        <h3>Calculate average</h3>
+        <p>Write a function which calculates the average of the numbers in a given list.</p>
+        <br>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function find_average(array) {
+    if (array.length === 0) {
+      return 0
+    } else {
+      let sum = (array.reduce((total, current) => total + current, 0));
+      let result = sum / array.length;
+      return (result);
+    }
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/57a2013acf1fa5bfc4000921/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
 
     </div>
     <footer>CREATED & DESIGNED BY ANTJE MYRIKNAS © 2022</footer>

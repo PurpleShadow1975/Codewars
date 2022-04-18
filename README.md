@@ -10,6 +10,7 @@ This repository contains my solutions to Codewars challenges.
 
 1. Highest and lowest
 2. Greet me
+3. Complementary DNA
 
 ## 8kyu
 
@@ -27,3 +28,19 @@ This repository contains my solutions to Codewars challenges.
 12. RemoveStringSpaces
 13. Convert a string to a number
 14. Remove first and last character
+15. Keep hydrated
+16. Century from year
+17. Basic Mathematical Operations
+18. Returning Strings
+19. Convert number to reversed array of digits
+20. Abbreviate a two word name
+21. Is n divisible by x and y
+22. Beginner - lost without a map
+23. A needle in the haystack
+24. Convert a boolean to a string
+25. You can't code under pressure #1
+26. Invert values
+27. Beginner Series #2 Clock
+28. Sentence smash
+29. Beginner Series #1 School paperwork
+30. Calculate average

@@ -90,6 +90,121 @@ function countSheeps(arrayOfSheep) {
   return counter;
 }
 
+// Stay Hydrated
+function litres(time) {
+  return Math.floor(time / 2);
+}
+
+// Century from Year
+function century(year) {
+  return Math.ceil(year / 100);
+}
+
+// Basic Mathematical Operations
+function basicOp(operation, value1, value2) {
+  return eval(value1 + operation + value2);
+}
+
+// Convert number to reversed array of digits
+function digitize(n) {
+  return String(n).split("").map(Number).reverse();
+}
+
+// Abbreviate a Two Word Name
+function abbrevName(name) {
+  let name1 = name.split(" ");
+  return (
+    name.split(" ")[0][0].toUpperCase() +
+    "." +
+    name.split(" ")[1][0].toUpperCase()
+  );
+  console.log(name1[0][0].toUpperCase + "." + name1[1][0].toUpperCase);
+}
+
+// Is n divisible by x and y?
+function isDivisible(n, x, y) {
+  if (n % x === 0 && n % y === 0) {
+    return true;
+  } else return false;
+}
+
+// Beginner - Lost Without a Map
+function maps(x) {
+  return (y = x.map((x) => x * 2));
+}
+
+// A Needle in the Haystack
+function findNeedle(haystack) {
+  for (let i = 0; i <= haystack.length; i++) {
+    if (haystack[i] === "needle") {
+      return `found the needle at position ${i}`;
+    }
+  }
+}
+
+// Convert a Boolean to a String
+function booleanToString(b) {
+  return b.toString();
+}
+
+// Invert values
+function invert(array) {
+  let newArray = [];
+  for (let i = 0; i <= array.length - 1; i++) {
+    if (array[i] < 0) {
+      newArray[i] = Math.abs(array[i]);
+    } else {
+      newArray[i] = -Math.abs(array[i]);
+    }
+  }
+  return newArray;
+}
+
+//16/04/2022
+//Beginner Series #2 Clock
+function past(h, m, s) {
+  return h * 3600000 + m * 60000 + s * 1000;
+}
+
+// Sentence Smash
+function smash(words) {
+  return words.join(" ");
+}
+
+// Complementary DNA
+function DNAStrand(dna) {
+  let newDNA = "";
+  for (let i = 0; i < dna.length; i++) {
+    if (dna[i] === "A") {
+      newDNA = newDNA + "T";
+    } else if (dna[i] === "T") {
+      newDNA = newDNA + "A";
+    } else if (dna[i] === "C") {
+      newDNA = newDNA + "G";
+    } else if (dna[i] === "G") {
+      newDNA = newDNA + "C";
+    }
+  }
+  return newDNA;
+}
+
+// Beginner Series #1 School Paperwork
+function paperwork(n, m) {
+  return n > 0 && m > 0 ? n * m : 0;
+}
+
+// Calculate average
+function find_average(array) {
+  let sum = array.reduce((total, current) => total + current, 0);
+  let result = sum / array.length;
+  return result;
+}
+
+// Reverse words
+function reverseWords(str) {
+  return str.split("").reverse().join("").split(" ").reverse().join(" ");
+}
+
 // 7th Kyu
 
 // Highest and Lowest
@@ -142,9 +257,7 @@ function basicOp(operation, value1, value2) {
   return eval(value1 + operation + value2);
 }
 
-// Returning strings
-
-// onvert number to reversed array of digits
+// Convert number to reversed array of digits
 function digitize(n) {
   return String(n).split("").map(Number).reverse();
 }
