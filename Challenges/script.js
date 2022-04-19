@@ -160,7 +160,6 @@ function invert(array) {
   return newArray;
 }
 
-//16/04/2022
 //Beginner Series #2 Clock
 function past(h, m, s) {
   return h * 3600000 + m * 60000 + s * 1000;
@@ -205,6 +204,19 @@ function reverseWords(str) {
   return str.split("").reverse().join("").split(" ").reverse().join(" ");
 }
 
+// You only need one - Beginner
+function check(a, x) {
+  return a.includes(x);
+}
+
+// Get the mean of an array
+function getAverage(marks) {
+  let length = marks.length;
+  let sum = marks.reduce((total, current) => total + current, 0);
+  return Math.floor(sum / length);
+}
+
+getAverage([2, 2, 2, 2]);
 // 7th Kyu
 
 // Highest and Lowest
