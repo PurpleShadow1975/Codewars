@@ -210,6 +210,7 @@ function check(a, x) {
 }
 
 // Get the mean of an array
+//
 function getAverage(marks) {
   let length = marks.length;
   let sum = marks.reduce((total, current) => total + current, 0);
