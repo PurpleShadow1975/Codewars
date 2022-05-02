@@ -210,14 +210,17 @@ function check(a, x) {
 }
 
 // Get the mean of an array
-//
 function getAverage(marks) {
   let length = marks.length;
   let sum = marks.reduce((total, current) => total + current, 0);
   return Math.floor(sum / length);
 }
 
-getAverage([2, 2, 2, 2]);
+// Beginner - Reduce but Grow
+function grow(x) {
+  console.log(x.reduce((total, input) => total * input, 1));
+}
+
 // 7th Kyu
 
 // Highest and Lowest
