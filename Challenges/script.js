@@ -222,6 +222,25 @@ function grow(x) {
 }
 
 // 7th Kyu
+// Vowel Count
+function getCount(str) {
+  let vowelsCount = 0;
+  let split = str.toLowerCase();
+  split = split.split("");
+
+  for (let i = 0; i < split.length; i++) {
+    if (
+      split[i] === "a" ||
+      split[i] === "e" ||
+      split[i] === "i" ||
+      split[i] === "o" ||
+      split[i] === "u"
+    ) {
+      vowelsCount++;
+    }
+  }
+  return vowelsCount;
+}
 
 // Highest and Lowest
 function highAndLow(numbers) {

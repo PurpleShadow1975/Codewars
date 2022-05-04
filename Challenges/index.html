@@ -278,6 +278,7 @@
             Kata on
             Codewars</a></p>
       </div>
+
       <div class="kataName">
         <h3>Return Negative</h3>
         <p>You are given a number and have to make it negative. But maybe the number is already negative?</p><br>
@@ -387,6 +388,7 @@
             Kata on
             Codewars</a></p>
       </div>
+
       <div class="kataName">
         <h3>Remove first and last character</h3>
         <p>Create a function that removes the first and last characters of a string.</p>
@@ -405,7 +407,6 @@
             Codewars</a></p>
       </div>
 
-      <!-- New ones -->
       <div class="kataName">
         <h3>Stay hydrated</h3>
         <p>You get given the time in hours and you need to return the number of litres, rounded to the
@@ -712,7 +713,8 @@
     if (array.length === 0) {
       return 0
     } else {
-      let sum = (array.reduce((total, current) => total + current, 0));
+      let sum = (array.reduce((total, current) => 
+      total + current, 0));
       let result = sum / array.length;
       return (result);
     }
