@@ -44,3 +44,7 @@ This repository contains my solutions to Codewars challenges.
 28. Sentence smash
 29. Beginner Series #1 School paperwork
 30. Calculate average
+31. MakeUpperCase
+32. You only need one - Beginner
+33. Get the mean of an array
+34. Reduce but grow

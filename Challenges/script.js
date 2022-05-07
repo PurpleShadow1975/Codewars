@@ -221,7 +221,47 @@ function grow(x) {
   console.log(x.reduce((total, input) => total * input, 1));
 }
 
+// Fake Binary
+function fakeBin(x) {
+  return x
+    .split("")
+    .map((n) => (n < 5 ? 0 : 1))
+    .join("");
+}
+
+// Quarter of the year
+const quarterOf = (month) => {
+  if (month <= 3) {
+    return 1;
+  } else if (month <= 6) {
+    return 2;
+  } else if (month <= 9) {
+    return 3;
+  } else {
+    return 4;
+  }
+};
+
 // 7th Kyu
+// Vowel Count
+function getCount(str) {
+  let vowelsCount = 0;
+  let split = str.toLowerCase();
+  split = split.split("");
+
+  for (let i = 0; i < split.length; i++) {
+    if (
+      split[i] === "a" ||
+      split[i] === "e" ||
+      split[i] === "i" ||
+      split[i] === "o" ||
+      split[i] === "u"
+    ) {
+      vowelsCount++;
+    }
+  }
+  return vowelsCount;
+}
 
 // Highest and Lowest
 function highAndLow(numbers) {
