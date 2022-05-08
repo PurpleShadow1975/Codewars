@@ -48,4 +48,3 @@ This repository contains my solutions to Codewars challenges.
 32. You only need one - Beginner
 33. Get the mean of an array
 34. Reduce but grow
-35. Fake Binary
