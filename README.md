@@ -50,3 +50,4 @@ This repository contains my solutions to Codewars challenges.
 34. Reduce but grow
 35. Fake Binary
 36. Quarter of the year
+37. Sum Arrays
