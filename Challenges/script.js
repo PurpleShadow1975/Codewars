@@ -248,8 +248,16 @@ function sum(numbers) {
   return numbers.reduce((x, y) => x + y, 0);
 }
 
-sum([1, 5.2, 4, 0, -1]);
+// Count the monkeys
+function monkeyCount(n) {
+  const monkeys = [];
+  for (let i = 1; i <= n; i++) {
+    monkeys.push(i);
+  }
+  return monkeys;
+}
 
+monkeyCount(10);
 // 7th Kyu
 // Vowel Count
 function getCount(str) {

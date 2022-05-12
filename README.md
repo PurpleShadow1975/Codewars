@@ -51,3 +51,4 @@ This repository contains my solutions to Codewars challenges.
 35. Fake Binary
 36. Quarter of the year
 37. Sum Arrays
+38. Count the monkeys
