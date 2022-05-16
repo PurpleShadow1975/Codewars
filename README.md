@@ -1,54 +1,21 @@
-# Codewars
+# CodeWars Challenges: <a target="_blank" href="https://www.codewars.com/users/amyriknas" >Follow my progress here</a>
 
-This repository contains my solutions to Codewars challenges.
+![alt tag](https://github.com/PurpleShadow1975/Codewars/blob/main/images/Codewars%20-%20screenshot1.jpg)
+![alt tag](https://github.com/PurpleShadow1975/Codewars/blob/main/images/Codewars%20-%20screenshot2.jpg)
 
-## 6kyu
+This repository contains my solutions to Codewars challenges. Currently ranked a 6kyu and pushing 1 solution every day.
 
-1. Multiples of 3 or 5
+## Technologies:
 
-## 7kyu
+https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E
+https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
+https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
 
-1. Highest and lowest
-2. Greet me
-3. Complementary DNA
+## Optimisations
 
-## 8kyu
+As I progress, I consistently refactor and optimize my code for efficiency and/or readability.
 
-1. Counting sheep
-2. Grasshopper - summation
-3. Find smallest integer
-4. String repeat
-5. Even or odd
-6. Sum of positive
-7. Convert number to string
-8. Return negative
-9. Reversed string
-10. Convert boolean value to string
-11. Square(n)Sum
-12. RemoveStringSpaces
-13. Convert a string to a number
-14. Remove first and last character
-15. Keep hydrated
-16. Century from year
-17. Basic Mathematical Operations
-18. Returning Strings
-19. Convert number to reversed array of digits
-20. Abbreviate a two word name
-21. Is n divisible by x and y
-22. Beginner - lost without a map
-23. A needle in the haystack
-24. Convert a boolean to a string
-25. You can't code under pressure #1
-26. Invert values
-27. Beginner Series #2 Clock
-28. Sentence smash
-29. Beginner Series #1 School paperwork
-30. Calculate average
-31. MakeUpperCase
-32. You only need one - Beginner
-33. Get the mean of an array
-34. Reduce but grow
-35. Fake Binary
-36. Quarter of the year
-37. Sum Arrays
-38. Count the monkeys
+## Lessons Learned:
+
+Starting Codewars and making it a routine as part of your working life as a developer can be challenging at first.
+It is ok to look at the solution if you struggle. It's a marathon, not a sprint.
