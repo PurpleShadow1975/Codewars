@@ -17,7 +17,7 @@ This repository contains my solutions to Codewars challenges. Currently ranked a
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
 </p>
 
-## Optimisations
+## Optimisations:
 
 As I progress, I consistently refactor and optimize my code for efficiency and/or readability.
 
