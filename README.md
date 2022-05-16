@@ -2,7 +2,7 @@
 
 ## About:
 
-This repository contains my solutions to Codewars challenges. Currently ranked a 6kyu and pushing 1 solution every day.
+This repository contains my solutions to Codewars challenges. Currently ranked a 6kyu and pushing one solution per day.
 
 <a target="_blank" href="https://www.codewars.com/users/amyriknas" >Follow my progress here</a>
 

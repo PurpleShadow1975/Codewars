@@ -82,6 +82,38 @@
       </div>
 
       <div class="kataName">
+        <h3>Vowel Count</h3>
+        <p>Return the number (count) of vowels in the given string.</p>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function getCount(str) {
+    let vowelsCount = 0;
+    let split = str.toLowerCase();
+    split = split.split("");
+        
+    for (let i = 0; i < split.length; i++) {
+      if (
+        split[i] === "a" ||
+        split[i] === "e" ||
+        split[i] === "i" ||
+        split[i] === "o" ||
+        split[i] === "u"
+    ) {
+        vowelsCount++;
+      }
+    }
+    return vowelsCount;
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/54ff3102c1bad923760001f3/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+      <div class="kataName">
         <h3>Greet Me</h3>
         <p>Write a method that takes one argument as name and then greets that name, capitalized and ends with an
           exclamation.</p>
@@ -158,6 +190,65 @@
             Codewars</a></p>
       </div>
 
+      <div class="kataName">
+        <h3>Beginner - Reduce but grow</h3>
+        <p>Given a non-empty array of integers, return the result of multiplying the values together in order. </p>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function grow(x){
+    return x.reduce((total, input) => 
+      total * input, 1)
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/57f780909f7e8e3183000078/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+      <div class="kataName">
+        <h3>Get the mean of an array</h3>
+        <p>Return the average of the given array rounded down to its nearest integer.</p>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function getAverage(marks){
+    let length = marks.length;
+    let sum = marks.reduce((total, current) => 
+      total + current, 0);
+    return (Math.floor(sum / length));
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/563e320cee5dddcf77000158/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+      <div class="kataName">
+        <h3>Count the monkeys!</h3>
+        <p>Given the number (n), populate an array with all numbers up to and including that number, but excluding zero.
+        </p>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function monkeyCount(n) {
+    const monkeys = [];
+    for (let i = 1; i <= n; i++) {
+      monkeys.push(i);
+    }
+    return monkeys;
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/56f69d9f9400f508fb000ba7/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
       <div class="kataName">
         <h3>Grasshopper - Summation</h3>
         <p>Write a program that finds the summation of every number from 1 to num.</p>
@@ -261,6 +352,58 @@
       </div>
 
       <div class="kataName">
+        <h3>You only need one - Beginner</h3>
+        <p>You will be given an array a and a value x. Check whether the array contains the value.</p><br>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function check(a, x) {
+    return (a.includes(x))
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/57cc975ed542d3148f00015b/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+      <div class="kataName">
+        <h3>MakeUpperCase</h3>
+        <p>Write a function which converts the input string to uppercase.</p><br>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function makeUpperCase(str) {
+    return str.toUpperCase()
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/57a0556c7cb1f31ab3000ad7/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+      <div class="kataName">
+        <h3>Sum Arrays</h3>
+        <p>Write a function that takes an array of numbers and returns the sum of the numbers.</p><br>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function sum (numbers) {
+    "use strict";
+    return numbers.reduce((x, y) => x + y, 0);
+  };
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/53dc54212259ed3d4f00071c/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+      <div class="kataName">
         <h3>Convert number to string</h3>
         <p>We need a function that can transform a number into a string.</p><br>
         <h4>My solution</h4>
@@ -347,6 +490,32 @@
         </pre>
 
         <p class="codewars"><a href="https://www.codewars.com/kata/515e271a311df0350d00000f/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+      <div class="kataName">
+        <h3>Quarter of the year</h3>
+        <p>Given a month as an integer from 1 to 12, return to which quarter of the year it belongs as an integer
+          number.</p><br>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  const quarterOf = (month) => {
+    if (month <= 3) {
+      return 1;
+    } else if (month <= 6) {
+      return 2;
+    } else if (month <= 9) {
+      return 3;
+    } else {
+      return 4;
+    }
+  };
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/5ce9c1000bab0b001134f5af/train/javascript"
             target="_blank">Link to
             Kata on
             Codewars</a></p>
@@ -468,7 +637,8 @@
         <pre class="prettyprint">
 
   function greet(name){
-    return (`Hello, ${name} how are you doing today?`)
+    return (`Hello, ${name} how are you 
+     doing today?`)
   }
         </pre>
 

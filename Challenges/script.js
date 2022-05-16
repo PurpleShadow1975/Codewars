@@ -192,13 +192,6 @@ function paperwork(n, m) {
   return n > 0 && m > 0 ? n * m : 0;
 }
 
-// Calculate average
-function find_average(array) {
-  let sum = array.reduce((total, current) => total + current, 0);
-  let result = sum / array.length;
-  return result;
-}
-
 // Reverse words
 function reverseWords(str) {
   return str.split("").reverse().join("").split(" ").reverse().join(" ");
@@ -257,7 +250,6 @@ function monkeyCount(n) {
   return monkeys;
 }
 
-monkeyCount(10);
 // 7th Kyu
 // Vowel Count
 function getCount(str) {
@@ -343,6 +335,11 @@ function abbrevName(name) {
     name.split(" ")[1][0].toUpperCase()
   );
   console.log(name1[0][0].toUpperCase + "." + name1[1][0].toUpperCase);
+}
+
+// MakeUpperCase
+function makeUpperCase(str) {
+  return str.toUpperCase();
 }
 
 // Is n divisible by x and y?
