@@ -52,6 +52,47 @@
             Codewars</a></p>
       </div>
 
+      <div class="kataName">
+        <h3>Detect Pangram</h3>
+        <p>Given a string, detect whether or not it is a pangram. Return True if it is, False if not. Ignore numbers and
+          punctuation.</p>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function isPangram(string) {
+    let x = [string.toLowerCase().split("")];
+    let z
+    x.forEach((x, i) => {
+      if (
+        x.includes("a") && x.includes("b") &&
+        x.includes("c") && x.includes("d") &&
+        x.includes("e") && x.includes("f") &&
+        x.includes("g") && x.includes("h") &&
+        x.includes("i") && x.includes("j") &&
+        x.includes("k") && x.includes("l") &&
+        x.includes("m") && x.includes("n") &&
+        x.includes("o") && x.includes("p") &&
+        x.includes("q") && x.includes("r") &&
+        x.includes("s") && x.includes("t") &&
+        x.includes("u") && x.includes("v") &&
+        x.includes("w") && x.includes("x") &&
+        x.includes("y") && x.includes("z")
+      ) {
+        z = true
+      } else {
+        z = false
+      }
+    });
+    return z
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/545cedaa9943f7fe7b000048/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
     </div>
 
     <h2 id="7kyu" class="red">Codewars - 7kyu</h2>

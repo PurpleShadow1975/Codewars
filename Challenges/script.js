@@ -425,3 +425,48 @@ function find_average(array) {
 function reverseWords(str) {
   return str.split("").reverse().join("").split(" ").reverse().join(" ");
 }
+
+// 16/05/2022
+// https://www.codewars.com/kata/545cedaa9943f7fe7b000048/train/javascript
+// Detect Pangram
+
+function isPangram(string) {
+  let x = [string.toLowerCase().split("")];
+  let z;
+  console.log(x);
+  x.forEach((x, i) => {
+    if (
+      x.includes("a") &&
+      x.includes("b") &&
+      x.includes("c") &&
+      x.includes("d") &&
+      x.includes("e") &&
+      x.includes("f") &&
+      x.includes("g") &&
+      x.includes("h") &&
+      x.includes("i") &&
+      x.includes("j") &&
+      x.includes("k") &&
+      x.includes("l") &&
+      x.includes("m") &&
+      x.includes("n") &&
+      x.includes("o") &&
+      x.includes("p") &&
+      x.includes("q") &&
+      x.includes("r") &&
+      x.includes("s") &&
+      x.includes("t") &&
+      x.includes("u") &&
+      x.includes("v") &&
+      x.includes("w") &&
+      x.includes("x") &&
+      x.includes("y") &&
+      x.includes("z")
+    ) {
+      z = true;
+    } else {
+      z = false;
+    }
+  });
+  return z;
+}
