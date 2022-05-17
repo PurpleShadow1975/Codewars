@@ -426,8 +426,6 @@ function reverseWords(str) {
   return str.split("").reverse().join("").split(" ").reverse().join(" ");
 }
 
-// 16/05/2022
-// https://www.codewars.com/kata/545cedaa9943f7fe7b000048/train/javascript
 // Detect Pangram
 
 function isPangram(string) {
@@ -469,4 +467,41 @@ function isPangram(string) {
     }
   });
   return z;
+}
+
+// Count of positives / sum of negatives
+
+function countPositivesSumNegatives(input) {
+  let num1 = 0;
+  let count = 0;
+
+  if (input == null || input.length == 0 || input.length == null) {
+    return [];
+  }
+  for (let i = 0; i < input.length; i++) {
+    if (input[i] <= 0) {
+      num1 += input[i];
+    } else {
+      count += 1;
+    }
+  }
+  if (count === 0 && num1 === 0) {
+    return [];
+  } else {
+    return [count, num1];
+  }
+}
+
+// Fake Binary
+function fakeBin(x) {
+  let arr = x.split("");
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < 5) {
+      arr[i] = 0;
+    } else {
+      arr[i] = 1;
+    }
+  }
+  return arr.join("");
 }

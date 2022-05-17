@@ -936,7 +936,70 @@
             Codewars</a></p>
       </div>
 
+      <div class="kataName">
+        <h3>Count of positives / sum of negatives</h3>
+        <p>Return an array, where the first element is the count of positives numbers and the second element is sum of
+          negative numbers. 0 is neither positive nor negative.</p>
+        <br>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
 
+  function countPositivesSumNegatives(input) {
+    let num1 = 0;
+    let count = 0;
+          
+    if (input == null || input.length == 0 || 
+      input.length == null) {
+      return [];
+    }
+    for (let i = 0; i < input.length; i++) {
+      if (input[i] <= 0) {
+        num1 += input[i];
+      } else {
+        count += 1;
+      }
+    }
+    if (count === 0 && num1 === 0) {
+      return [];
+    } else {
+      return [count, num1];
+    }
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/576bb71bbbcf0951d5000044/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
+
+      <div class="kataName">
+        <h3>Fake Binary</h3>
+        <p>Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'.
+        </p>
+        <br>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function fakeBin(x) {
+    let arr = x.split("");
+          
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] < 5) {
+        arr[i] = 0;
+      } else {
+        arr[i] = 1;
+      }
+    }
+    return arr.join("");
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/57eae65a4321032ce000002d/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
 
     </div>
     <footer>CREATED & DESIGNED BY ANTJE MYRIKNAS © 2022</footer>
