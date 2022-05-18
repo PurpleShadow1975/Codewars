@@ -563,3 +563,9 @@ function areYouPlayingBanjo(name) {
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   return distanceToPump / mpg <= fuelLeft;
 };
+
+// Simple multiplication
+
+function simpleMultiplication(number) {
+  return number % 2 === 0 ? number * 8 : number * 9;
+}
