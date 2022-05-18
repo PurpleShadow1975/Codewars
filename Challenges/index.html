@@ -1071,6 +1071,34 @@
             Codewars</a></p>
       </div>
 
+      <div class="kataName">
+        <h3>Opposites attract</h3>
+        <p>Write a function that will take the number of petals of each flower and return true if they are in love and
+          false if they aren't.
+        </p>
+        <br>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+  function lovefunc(flower1, flower2) {
+    if (
+      (flower1 % 2 === 0 && flower2 % 2 === 0) ||
+      (flower1 % 2 !== 0 && flower2 % 2 !== 0)
+    ) {
+      return false;
+    } else if (
+      (flower1 % 2 !== 0 && flower2 % 2 === 0) ||        (flower1 % 2 === 0 && flower2 % 2 !== 0)
+    ) {
+      return true;
+      }
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/555086d53eac039a2a000083/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
 
 
     </div>
