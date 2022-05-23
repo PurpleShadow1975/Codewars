@@ -1087,7 +1087,8 @@
     ) {
       return false;
     } else if (
-      (flower1 % 2 !== 0 && flower2 % 2 === 0) ||        (flower1 % 2 === 0 && flower2 % 2 !== 0)
+      (flower1 % 2 !== 0 && flower2 % 2 === 0) ||        
+      (flower1 % 2 === 0 && flower2 % 2 !== 0)
     ) {
       return true;
       }
@@ -1162,6 +1163,28 @@
             Codewars</a></p>
       </div>
 
+      <div class="kataName">
+        <h3>How good are you really?</h3>
+        <p>You receive an array with your peers' test scores. Now calculate the average and compare your score!
+        </p>
+        <br>
+        <h4>My solution</h4>
+        <pre class="prettyprint">
+
+
+  function betterThanAverage(classPoints, yourPoints) {
+    return (classPoints.reduce((a, b) => a + b, 0) + yourPoints) /
+      (classPoints.length + 1) < yourPoints
+        ? true : false;
+    }
+  }
+        </pre>
+
+        <p class="codewars"><a href="https://www.codewars.com/kata/53af2b8861023f1d88000832/train/javascript"
+            target="_blank">Link to
+            Kata on
+            Codewars</a></p>
+      </div>
 
 
     </div>
