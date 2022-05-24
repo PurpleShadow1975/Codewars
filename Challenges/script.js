@@ -250,7 +250,6 @@ function monkeyCount(n) {
   return monkeys;
 }
 
-// 7th Kyu
 // Vowel Count
 function getCount(str) {
   let vowelsCount = 0;
@@ -291,8 +290,6 @@ let greet = function (name) {
 
   return `Hello ${name}!`;
 };
-
-// 6kyu
 
 // Multiples of 3 or 5
 function solution(number) {
@@ -470,7 +467,6 @@ function isPangram(string) {
 }
 
 // Count of positives / sum of negatives
-
 function countPositivesSumNegatives(input) {
   let num1 = 0;
   let count = 0;
@@ -559,19 +555,16 @@ function areYouPlayingBanjo(name) {
 }
 
 // Will you make it?
-
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   return distanceToPump / mpg <= fuelLeft;
 };
 
 // Simple multiplication
-
 function simpleMultiplication(number) {
   return number % 2 === 0 ? number * 8 : number * 9;
 }
 
 // How good are you really?
-
 function betterThanAverage(classPoints, yourPoints) {
   function betterThanAverage(classPoints, yourPoints) {
     return (classPoints.reduce((a, b) => a + b, 0) + yourPoints) /
