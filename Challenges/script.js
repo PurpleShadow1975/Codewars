@@ -579,3 +579,8 @@ function betterThanAverage(classPoints, yourPoints) {
 function multiply(n1, n2) {
   return n1 * n2;
 }
+
+// Convert a string to an array
+function stringToArray(string) {
+  return string.split(" ");
+}
