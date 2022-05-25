@@ -574,3 +574,8 @@ function betterThanAverage(classPoints, yourPoints) {
       : false;
   }
 }
+
+// Function 3 - multiplying two numbers
+function multiply(n1, n2) {
+  return n1 * n2;
+}
