@@ -602,3 +602,41 @@ class Kata {
     return length * width * height;
   }
 }
+
+function sayHello(name, city, state) {
+  const person = name.reduce((a, b) => a + " " + b);
+  console.log(`Hello, ${person}! Welcome to ${city}, ${state}!`);
+}
+
+function getPlanetName(id) {
+  var name;
+  console.log(id);
+  switch (id) {
+    case 1:
+      name = "Mercury";
+      break;
+    case 2:
+      name = "Venus";
+      break;
+    case 3:
+      name = "Earth";
+      break;
+    case 4:
+      name = "Mars";
+      break;
+    case 5:
+      name = "Jupiter";
+      break;
+    case 6:
+      name = "Saturn";
+      break;
+    case 7:
+      name = "Uranus";
+      break;
+    case 8:
+      name = "Neptune";
+      break;
+  }
+
+  console.log(name);
+}
