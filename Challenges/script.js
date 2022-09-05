@@ -640,3 +640,8 @@ function getPlanetName(id) {
 
   console.log(name);
 }
+
+// Name Shuffler
+function nameShuffler(str) {
+  return str.split(" ").reverse().join(" ");
+}
