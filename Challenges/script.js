@@ -645,3 +645,15 @@ function getPlanetName(id) {
 function nameShuffler(str) {
   return str.split(" ").reverse().join(" ");
 }
+
+// What is between?
+function between(a, b) {
+  let x = [];
+  for (let i = a; i <= b; i++) {
+    x.push(a);
+    a++;
+  }
+  return x;
+}
+
+between(-1, 5);
