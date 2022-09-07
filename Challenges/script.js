@@ -655,3 +655,16 @@ function between(a, b) {
   }
   return x;
 }
+
+//All Star Code Challenge #18
+function strCount(str, letter) {
+  let result = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === letter) {
+      result = result + 1;
+    }
+  }
+  console.log(result);
+}
+
+strCount("Hello", "l");
