@@ -666,5 +666,3 @@ function strCount(str, letter) {
   }
   console.log(result);
 }
-
-strCount("Hello", "l");
