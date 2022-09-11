@@ -677,3 +677,19 @@ function hello(name) {
     return `Hello, ${name}!`;
   }
 }
+
+// Sum without highest and lowest number
+function sumArray(array) {
+  if (array == null || array.length <= 2) {
+    console.log(0);
+  } else {
+    array.sort(function (a, b) {
+      return a - b;
+    });
+    array.shift();
+    array.pop();
+    console.log(array.reduce((a, b) => a + b, 0));
+  }
+}
+
+sumArray([6, 1, 4]);
