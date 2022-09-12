@@ -692,4 +692,8 @@ function sumArray(array) {
   }
 }
 
-sumArray([6, 1, 4]);
+// Parse nice int from char problem
+
+function getAge(inputString) {
+  return Number(inputString[0]);
+}
